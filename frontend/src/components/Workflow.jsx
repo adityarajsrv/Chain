@@ -49,10 +49,10 @@ const Workflow = () => {
   return (
     <main className="ml-56 px-8 min-h-screen overflow-auto bg-[#fafafa] bg-[radial-gradient(circle,rgba(0,0,0,0.15)_1px,transparent_1px)] bg-size-[24px_24px] relative">
       <div className="fixed top-6 right-6 z-50 flex flex-col gap-2">
-        <button onClick={zoomIn} className="px-3 py-1 bg-white shadow rounded ">
+        <button onClick={zoomIn} className="px-3 py-1 bg-white shadow rounded cursor-pointer">
           <ZoomIn />
         </button>
-        <button onClick={zoomOut} className="px-3 py-1 bg-white shadow rounded">
+        <button onClick={zoomOut} className="px-3 py-1 bg-white shadow rounded cursor-pointer">
           <ZoomOut />
         </button>
       </div>
