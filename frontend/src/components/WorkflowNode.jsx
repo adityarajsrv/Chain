@@ -44,8 +44,8 @@ const NodeBody = ({ node }) => {
 const LinearNodeBody = ({ node }) => {
   return (
     <div className="p-4">
-      <h3 className="text-base font-semibold text-gray-900">{node.label}</h3>
-      <button className="mt-3 flex items-center gap-1 text-sm text-gray-600 hover:text-gray-900">
+      <h3 className="text-base font-semibold text-gray-900 cursor-text">{node.label}</h3>
+      <button className="mt-3 flex items-center gap-1 text-sm text-gray-600 hover:text-gray-900 cursor-pointer">
         <span className="text-lg leading-none">+</span>
         Insert Next
       </button>
@@ -85,7 +85,7 @@ const NodeFooter = ({ node }) => {
 
   return (
     <div className="flex justify-end px-4 pb-4">
-      <button className="flex flex-row justify-start space-x-2 items-center text-sm text-gray-500 hover:text-red-600">
+      <button className="flex flex-row justify-start space-x-2 items-center text-sm text-gray-500 hover:text-red-600 cursor-pointer">
         <Trash2 className="h-4 w-4 mt-px mr-1"/>Delete
       </button>
     </div>
