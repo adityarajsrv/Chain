@@ -1,5 +1,5 @@
 import logo from "/logo.png";
-import { Redo2, Save, Undo2 } from "lucide-react";
+import { BrushCleaning, Redo2, Save, Undo2 } from "lucide-react";
 
 const Sidebar = () => {
   return (
@@ -25,6 +25,10 @@ const Sidebar = () => {
           <Redo2 className="h-5 w-5" />
           <span className="text-sm">Redo</span>
         </button>
+      </div>
+      <div className="mt-4 flex justify-center items-center space-x-2 p-2 rounded-md bg-gray-50 hover:bg-gray-100 cursor-pointer border border-gray-200">
+        <BrushCleaning className="h-5 w-5" />
+        <span className="text-md">Clear</span>
       </div>
     </div>
   );
